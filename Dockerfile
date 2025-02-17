@@ -1,4 +1,4 @@
-FROM openjdk:21
+FROM openjdk:17
 
 COPY .\build\libs\boot-docker-0.0.1-SNAPSHOT.jar /usr/local/bin/app.jar
 RUN chmod +x /usr/local/bin/app.jar
