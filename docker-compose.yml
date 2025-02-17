@@ -1,7 +1,9 @@
 version: "3"
 services:
   bootdocker:
-    # image: bootdocker:latest
-    build: .
+    image: bootdocker:latest
+    # build: .
     ports:
       - 8082:8080
+    volumes:
+      - ./tempFile:/var/bootdocker-file
